@@ -1,0 +1,37 @@
+.button {
+  display: flex;
+  width: 100%;
+  padding: 14px 14px;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $color-text;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 2px solid $color-text;
+  background-color: $color-white;
+
+  @media (min-width: 600px) {
+    font-size: 17px;
+  }
+}
+
+.button:hover {
+  background-color: $color-text;
+  color: $color-white;
+}
+
+.button:active {
+  background-color: $color-text;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 2px solid sandybrown;
+}

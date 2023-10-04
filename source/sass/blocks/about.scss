@@ -1,0 +1,132 @@
+.about__wrapper {
+  margin: 31px 30px 58px;
+
+  @media (min-width: 600px) {
+    margin: 31px 50px 62px;
+  }
+
+  @media (min-width: 1150px) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.about__title {
+  @media (min-width: 600px) {
+    margin: 54px 0 0;
+  }
+
+  @media (min-width: 1150px) {
+    margin: 73px 0 0 175px;
+  }
+}
+
+.about__list {
+  margin: 20px 0 0;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: calc(50% - 42px) 50%;
+    column-gap: 42px;
+    row-gap: 28px;
+
+    margin: 35px 0 0;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: repeat(3, 116px) repeat(3, 1fr);
+    column-gap: 58px;
+    margin: 31px 0 0;
+  }
+}
+
+.about__item:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+@media (min-width: 600px) {
+  .about__item:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .about__item:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .about__item:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .about__item:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .about__item:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .about__item:nth-child(6) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__item:nth-child(1) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .about__item:nth-child(2) {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .about__item:nth-child(3) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .about__item:nth-child(4) {
+    grid-column: 4 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .about__item:nth-child(5) {
+    grid-column: 4 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .about__item:nth-child(6) {
+    grid-column: 4 / -1;
+    grid-row: 3 / 4;
+  }
+}
+
+.about__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+
+  margin: 0 0 8px -5px;
+
+  @media (min-width: 600px) {
+    margin: 0 0 8px -4px;
+  }
+}
+
+
